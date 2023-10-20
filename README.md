@@ -1,2 +1,6 @@
 # fixture_maker
- Fiixture making app
+Fixture making app
+
+Using pip install:
+    fontawesomefree module
+    tabulate module
