@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" style="position: fixed; left: 0; width: 280px; height: 100%; background:rgb(33, 37, 41);">
+        <div>
+            <header style="text-align: center; color: white; line-height: 50px; font-size: x-large;">MAKE YOUR OWN FIXTURE</header>
+            <a href = "#"><i class="far fa-calendar-check"></i></a>
+        </div>
+        <hr>
+        <ul>
+            
+            <li>
+                <i class="far fa-calendar-check"></i>Knockout
+            </li>
+            <li>
+                <i class="far fa-calendar-check"></i>League - Round Robin
+            </li>
+            <li>
+                <i class="far fa-calendar-check"></i>League - Tabular
+            </li>
+            <li>
+                <i class="far fa-calendar-check"></i>League - Staircase
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+                <text
+                    style="color: white; margin-right: 14%; font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif">ENTER TEAMS</text>
+                </div>
+
+ bg-dark border-bottom border-body" data-bs-theme="dark" style="height: 7%; overflow-y: auto;"
+
+
+
+
+
+
+    rgb(33, 37, 41)
+    rgb(13, 110, 253)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>HOME</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!--add js stattic file-->
+    
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <div style="width : 100%; height: 100%; position: fixed; left: 15%; display : block;">
+        <!-- As a heading -->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="height: 7%;">
+            <div class="container-fluid" style=" text-align: center;">
+                <text
+                    style="color: white; margin-left: 40%; font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif">ENTER
+                    TEAMS</text>
+            </div>
+        </nav>
+
+        <div style="overflow-y: auto; height: 100%;">
+            <form
+                style="display: inline-block; width: 50%; text-align: left; margin-left: 15%; margin-top: 5%; margin-bottom: 20%;">
+                <fieldset>
+                    <div class="mb-3" style="margin-top: 10%;">
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;">ENTER NUMBER OF TEAMS</label>
+                        <input type="text" name='selectTeams' id="TextInput" class="form-control" id='numTeam'
+                            placeholder="Numer of teams">
+                    </div>
+                </fieldset>
+            </form>
+            <button class="btn btn-primary" style="margin-top: 3%;" onclick = "ind = ind + 1; console.log(ind);">Submit</button>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+            Once pressed SUBMIT, checkout the fixture modes!!
+        </div>
+
+        <div style="overflow-y: auto; height: 100%;">
+            <form style="display: inline-block; width: 50%; text-align: left; margin-left: 15%; margin-bottom: 20%;"
+                action="/">
+                <fieldset>
+                    <div class="mb-3" style="margin-top: 10%;">
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label1">Team 1</label>
+                        <input type="text" name='team1' id="TextInput" class="form-control" placeholder="Team 1"
+                            id="team1">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label2">Team 2</label>
+                        <input type="text" name='team2' id="TextInput" class="form-control" placeholder="Team 2"
+                            id="team2">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label3">Team 3</label>
+                        <input type="text" name='team3' id="TextInput" class="form-control" placeholder="Team 3"
+                            id="team3">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label4">Team 4</label>
+                        <input type="text" name='team4' id="TextInput" class="form-control" placeholder="Team 4"
+                            id="team4">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label5">Team 5</label>
+                        <input type="text" name='team5' id="TextInput" class="form-control" placeholder="Team 5"
+                            id="team5">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label6">Team 6</label>
+                        <input type="text" name='team6' id="TextInput" class="form-control" placeholder="Team 6"
+                            id="team6">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label7">Team 7</label>
+                        <input type="text" name='team7' id="TextInput" class="form-control" placeholder="Team 7"
+                            id="team7">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label8">Team 8</label>
+                        <input type="text" name='team8' id="TextInput" class="form-control" placeholder="Team 8"
+                            id="team8">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label9">Team 9</label>
+                        <input type="text" name='team9' id="TextInput" class="form-control" placeholder="Team 9"
+                            id="team9">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label10">Team 10</label>
+                        <input type="text" name='team10' id="TextInput" class="form-control" placeholder="Team 10"
+                            id="team10">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label11">Team 11</label>
+                        <input type="text" name='team11' id="TextInput" class="form-control" placeholder="Team 11"
+                            id="team11">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label12">Team 12</label>
+                        <input type="text" name='team12' id="TextInput" class="form-control" placeholder="Team 12"
+                            id="team12">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label13">Team 13</label>
+                        <input type="text" name='team13' id="TextInput" class="form-control" placeholder="Team 13"
+                            id="team13">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label14">Team 14</label>
+                        <input type="text" name='team14' id="TextInput" class="form-control" placeholder="Team 14"
+                            id="team14">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label15">Team 15</label>
+                        <input type="text" name='team15' id="TextInput" class="form-control" placeholder="Team 15"
+                            id="team15">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label16">Team 16</label>
+                        <input type="text" name='team16' id="TextInput" class="form-control" placeholder="Team 16"
+                            id="team16">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label17">Team 17</label>
+                        <input type="text" name='team17' id="TextInput" class="form-control" placeholder="Team 17"
+                            id="team17">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label18">Team 18</label>
+                        <input type="text" name='team18' id="TextInput" class="form-control" placeholder="Team 18"
+                            id="team18">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label19">Team 19</label>
+                        <input type="text" name='team19' id="TextInput" class="form-control" placeholder="Team 19"
+                            id="team19">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label20">Team 20</label>
+                        <input type="text" name='team20' id="TextInput" class="form-control" placeholder="Team 20"
+                            id="team20">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label21">Team 21</label>
+                        <input type="text" name='team21' id="TextInput" class="form-control" placeholder="Team 21"
+                            id="team21">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label22">Team 22</label>
+                        <input type="text" name='team22' id="TextInput" class="form-control" placeholder="Team 22"
+                            id="team22">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label23">Team 23</label>
+                        <input type="text" name='team23' id="TextInput" class="form-control" placeholder="Team 23"
+                            id="team23">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label24">Team 24</label>
+                        <input type="text" name='team24' id="TextInput" class="form-control" placeholder="Team 24"
+                            id="team24">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label25">Team 25</label>
+                        <input type="text" name='team25' id="TextInput" class="form-control" placeholder="Team 25"
+                            id="team25">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label26">Team 26</label>
+                        <input type="text" name='team26' id="TextInput" class="form-control" placeholder="Team 26"
+                            id="team26">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label27">Team 27</label>
+                        <input type="text" name='team27' id="TextInput" class="form-control" placeholder="Team 27"
+                            id="team27">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label28">Team 28</label>
+                        <input type="text" name='team28' id="TextInput" class="form-control" placeholder="Team 28"
+                            id="team28">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label29">Team 29</label>
+                        <input type="text" name='team29' id="TextInput" class="form-control" placeholder="Team 29"
+                            id="team29">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label30">Team 30</label>
+                        <input type="text" name='team30' id="TextInput" class="form-control" placeholder="Team 30"
+                            id="team30">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label31">Team 31</label>
+                        <input type="text" name='team31' id="TextInput" class="form-control" placeholder="Team 31"
+                            id="team31">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id="label32">Team 32</label>
+                        <input type="text" name='team32' id="TextInput" class="form-control" placeholder="Team 32"
+                            id="team32">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 3%;">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+        style="width: 15%; height: 100%; position: fixed; left: 0; top : 0; display: block;">
+        <div style="height: fit-content; text-align: center;">
+            <text
+                style="align-self: center; font-size: x-large; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">
+                MAKE YOUR FIXTURES </text>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/" class="nav-link active" aria-current="page">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/roundrobin" class="nav-link text-white">
+                    League - Round Robin
+                </a>
+            </li>
+            <li>
+                <a href="/knockout" class="nav-link text-white">
+                    Knockout
+                </a>
+            </li>
+            <li>
+                <a href="/ladder" class="nav-link text-white">
+                    League - Ladder
+                </a>
+            </li>
+            <li>
+                <a href="/tabular" class="nav-link text-white">
+                    League - Tabular
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown" style="text-align: center;">
+            <text style="align-self: center; font-family: 'Courier New', Courier, monospace; font-size: x-large">FIXTURE
+                MAKER</text>
+        </div>
+    </div>
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Nice, you triggered this alert message!', 'success')
+            })
+        };
+
+        ind = 0;
+        
+        if (ind == 1){
+            var teamnum = document.getElementById('numTeam').value;
+
+            for(i = 1; teamnum + 1; i++){
+               let x = 'label' + String(i);
+               eval(document.getElementById(x).style.display = none );
+
+            }
+           var x = 0;
+           console.log(x);
+        }
+        
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>HOME</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--fontawesome-->
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!--add js stattic file-->
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <div style="width : 100%; height: 100%; position: fixed; left: 15%; display : block;">
+        <!-- As a heading -->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="height: 7%;">
+            <div class="container-fluid" style=" text-align: center;">
+                <text
+                    style="color: white; margin-left: 40%; font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif">ENTER
+                    TEAMS</text>
+            </div>
+        </nav>
+
+            
+
+        <div class="alert alert-warning" role="alert">
+            Once pressed SUBMIT, checkout the fixture modes!!
+        </div>
+
+        <div style="overflow-y: auto; height: 100%;">
+            <form style="display: inline-block; width: 50%; text-align: left; margin-left: 15%; margin-top: 5%; margin-bottom: 20%;" action="/inputteams">
+                <fieldset>
+                    <div class="mb-3" style="margin-top: 10%;">
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;">ENTER NUMBER OF TEAMS</label>
+                        <input type="text" name = 'selectTeams' id="TextInput" class="form-control"  id = 'numTeam' placeholder="Numer of teams">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 3%;" onclick="teamNum()">Submit</button>
+                </fieldset>
+            </form>a
+
+            <form style="display: inline-block; width: 50%; text-align: left; margin-left: 15%; margin-bottom: 20%;" action="/roundrobin">
+                <fieldset>
+                    <div class="mb-3" style="margin-top: 10%;">
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label1">Team 1</label>
+                        <input type="text" name = 'team1' id="TextInput" class="form-control" placeholder="Team 1" id = "team1">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label2">Team 2</label>
+                        <input type="text" name = 'team2' id="TextInput" class="form-control" placeholder="Team 2" id = "team2">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label3">Team 3</label>
+                        <input type="text" name = 'team3' id="TextInput" class="form-control" placeholder="Team 3" id = "team3">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label4">Team 4</label>
+                        <input type="text" name = 'team4' id="TextInput" class="form-control" placeholder="Team 4" id = "team4">
+ 
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label5">Team 5</label>
+                        <input type="text" name = 'team5' id="TextInput" class="form-control" placeholder="Team 5" id = "team5">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label6">Team 6</label>
+                        <input type="text" name = 'team6' id="TextInput" class="form-control" placeholder="Team 6" id = "team6">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label7">Team 7</label>
+                        <input type="text" name = 'team7' id="TextInput" class="form-control" placeholder="Team 7" id = "team7">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label8">Team 8</label>
+                        <input type="text" name = 'team8' id="TextInput" class="form-control" placeholder="Team 8" id = "team8">
+ 
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label9">Team 9</label>
+                        <input type="text" name = 'team9' id="TextInput" class="form-control" placeholder="Team 9" id = "team9">
+                         
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label10">Team 10</label>
+                        <input type="text" name = 'team10' id="TextInput" class="form-control" placeholder="Team 10" id = "team10">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label11">Team 11</label>
+                        <input type="text" name = 'team11' id="TextInput" class="form-control" placeholder="Team 11" id = "team11">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label12">Team 12</label>
+                        <input type="text" name = 'team12' id="TextInput" class="form-control" placeholder="Team 12" id = "team12">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label13">Team 13</label>
+                        <input type="text" name = 'team13' id="TextInput" class="form-control" placeholder="Team 13" id = "team13">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label14">Team 14</label>
+                        <input type="text" name = 'team14' id="TextInput" class="form-control" placeholder="Team 14" id = "team14">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label15">Team 15</label>
+                        <input type="text" name = 'team15' id="TextInput" class="form-control" placeholder="Team 15" id = "team15">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label16">Team 16</label>
+                        <input type="text" name = 'team16' id="TextInput" class="form-control" placeholder="Team 16" id = "team16">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label17">Team 17</label>
+                        <input type="text" name = 'team17' id="TextInput" class="form-control" placeholder="Team 17" id = "team17">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label18">Team 18</label>
+                        <input type="text" name = 'team18' id="TextInput" class="form-control" placeholder="Team 18" id = "team18">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label19">Team 19</label>
+                        <input type="text" name = 'team19' id="TextInput" class="form-control" placeholder="Team 19" id = "team19">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label20">Team 20</label>
+                        <input type="text" name = 'team20' id="TextInput" class="form-control" placeholder="Team 20" id = "team20">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label21">Team 21</label>
+                        <input type="text" name = 'team21' id="TextInput" class="form-control" placeholder="Team 21" id = "team21">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label22">Team 22</label>
+                        <input type="text" name = 'team22' id="TextInput" class="form-control" placeholder="Team 22" id = "team22">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label23">Team 23</label>
+                        <input type="text" name = 'team23' id="TextInput" class="form-control" placeholder="Team 23" id = "team23">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label24">Team 24</label>
+                        <input type="text" name = 'team24' id="TextInput" class="form-control" placeholder="Team 24" id = "team24">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label25">Team 25</label>
+                        <input type="text" name = 'team25' id="TextInput" class="form-control" placeholder="Team 25" id = "team25">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label26">Team 26</label>
+                        <input type="text" name = 'team26' id="TextInput" class="form-control" placeholder="Team 26" id = "team26">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label27">Team 27</label>
+                        <input type="text" name = 'team27' id="TextInput" class="form-control" placeholder="Team 27" id = "team27">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label28">Team 28</label>
+                        <input type="text" name = 'team28' id="TextInput" class="form-control" placeholder="Team 28" id = "team28">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label29">Team 29</label>
+                        <input type="text" name = 'team29' id="TextInput" class="form-control" placeholder="Team 29" id = "team29">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label30">Team 30</label>
+                        <input type="text" name = 'team30' id="TextInput" class="form-control" placeholder="Team 30" id = "team30">
+
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label31">Team 31</label>
+                        <input type="text" name = 'team31' id="TextInput" class="form-control" placeholder="Team 31" id = "team31">
+                        
+                        <label for="TextInput" class="form-label" style="margin-top: 5%;" id = "label32">Team 32</label>
+                        <input type="text" name = 'team32' id="TextInput" class="form-control" placeholder="Team 32" id = "team32">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 3%;">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+        style="width: 15%; height: 100%; position: fixed; left: 0; top : 0; display: block;">
+        <div style="height: fit-content; text-align: center;">
+            <text
+                style="align-self: center; font-size: x-large; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">
+                MAKE YOUR FIXTURES </text>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/" class="nav-link active" aria-current="page">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/roundrobin" class="nav-link text-white">
+                    League - Round Robin
+                </a>
+            </li>
+            <li>
+                <a href="/knockout" class="nav-link text-white">
+                    Knockout
+                </a>
+            </li>
+            <li>
+                <a href="/ladder" class="nav-link text-white">
+                    League - Ladder
+                </a>
+            </li>
+            <li>
+                <a href="/tabular" class="nav-link text-white">
+                    League - Tabular
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown" style="text-align: center;">
+            <text style="align-self: center; font-family: 'Courier New', Courier, monospace; font-size: x-large">FIXTURE
+                MAKER</text>
+        </div>
+    </div>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>
