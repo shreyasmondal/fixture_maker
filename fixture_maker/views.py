@@ -210,22 +210,12 @@ def inputPage(request):
                             </li>
                             <li>
                                 <a href="/roundrobin" class="nav-link text-white">
-                                    League - Round Robin
+                                    League
                                 </a>
                             </li>
                             <li>
                                 <a href="/knockout" class="nav-link active">
                                     Knockout
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/ladder" class="nav-link text-white">
-                                    League - Ladder
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tabular" class="nav-link text-white">
-                                    League - Tabular
                                 </a>
                             </li>
                         </ul>
@@ -261,7 +251,7 @@ def inputPage(request):
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>KNOCKOUT</title>
+                    <title>LEAGUE</title>
                     <!--bootstrap-->
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
                         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -356,24 +346,13 @@ def inputPage(request):
                             </li>
                             <li>
                                 <a href="/roundrobin" class="nav-link text active">
-                                    League - Round Robin
+                                    League
                                 </a>
                             </li>
                             <li>
                                 <a href="/knockout" class="nav-link text-white">
                                     Knockout
                                 </a>
-                            </li>
-                            <li>
-                                <a href="/ladder" class="nav-link text-white">
-                                    League - Ladder
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tabular" class="nav-link text-white">
-                                    League - Tabular
-                                </a>
-                            </li>
                         </ul>
                         <hr>
                         <div class="dropdown" style="text-align: center;">
