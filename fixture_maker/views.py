@@ -17,8 +17,6 @@ def index(request):
 def inputPage(request):
     numteam.clear()
     numteam.append(request.GET.get('selectTeams'))
-    print(request.GET.get('selectTeams'))
-    print(numteam)
 
     team1 = request.GET.get('team1', 'Bye')
     team2 = request.GET.get('team2', 'Bye')
@@ -87,8 +85,7 @@ def inputPage(request):
     l.append(team30.upper())
     l.append(team31.upper())
     l.append(team32.upper())
-    print(l)
-
+    
     # changing the null strings to bye
     for i in range(len(l)):
         if l[i] == '':
@@ -238,7 +235,6 @@ def inputPage(request):
         r2end = int(int(numteam[0])+1)
         a = l[0: r1end]
         b = l[r1end:r2end]
-        print(a,b)
     else:
         r1end = int(int(numteam[0])/2)
         r2end = int(int(numteam[0]))
@@ -380,12 +376,3 @@ def roundrobin(request):
 def knockout(request):
     
     return render(request, 'knockout.html')
-    
-
-
-
-def ladder(request):
-    return render(request, 'ladder.html')
-
-def tabular(request):
-    return render(request, 'tabular.html')
