@@ -21,9 +21,8 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('forms', views.form, name = 'form'),
     path('inputPage', views.inputPage),
     path('roundrobin', views.roundrobin),
     path('knockout', views.knockout),
-    path('tabular', views.tabular),
-    path('ladder', views.ladder)
 ]

@@ -14,90 +14,33 @@ for i in range(32):
 def index(request):
     return render(request, 'index.html')
 
-def inputPage(request):
+def form(request):
+    t = int(request.GET.get('selectTeams'))
     numteam.clear()
-    numteam.append(request.GET.get('selectTeams'))
+    numteam.append(t)
+    return render(request, 'forms.html', {'nteam' : range(1,t+1)}) 
 
-    team1 = request.GET.get('team1', 'Bye')
-    team2 = request.GET.get('team2', 'Bye')
-    team3 = request.GET.get('team3', 'Bye')
-    team4 = request.GET.get('team4', 'Bye')
-    team5 = request.GET.get('team5', 'Bye')
-    team6 = request.GET.get('team6', 'Bye')
-    team7 = request.GET.get('team7', 'Bye')
-    team8 = request.GET.get('team8', 'Bye')
-    team9 = request.GET.get('team9', 'Bye')
-    team10 = request.GET.get('team10', 'Bye')
-    team11 = request.GET.get('team11', 'Bye')
-    team12 = request.GET.get('team12', 'Bye')
-    team13 = request.GET.get('team13', 'Bye')
-    team14 = request.GET.get('team14', 'Bye')
-    team15 = request.GET.get('team15', 'Bye')
-    team16 = request.GET.get('team16', 'Bye')
-    team17 = request.GET.get('team17', 'Bye')
-    team18 = request.GET.get('team18', 'Bye')
-    team19 = request.GET.get('team19', 'Bye')
-    team20 = request.GET.get('team20', 'Bye')
-    team21 = request.GET.get('team21', 'Bye')
-    team22 = request.GET.get('team22', 'Bye')
-    team23 = request.GET.get('team23', 'Bye')
-    team24 = request.GET.get('team24', 'Bye')
-    team25 = request.GET.get('team25', 'Bye')
-    team26 = request.GET.get('team26', 'Bye')
-    team27 = request.GET.get('team27', 'Bye')
-    team28 = request.GET.get('team28', 'Bye')
-    team29 = request.GET.get('team29', 'Bye')
-    team30 = request.GET.get('team30', 'Bye')
-    team31 = request.GET.get('team31', 'Bye')
-    team32 = request.GET.get('team32', 'Bye')
-    
+def inputPage(request):
     l.clear()
+    for i in range(1,numteam[0]+1):
+        s = 'team'+str(i)
+        s = request.GET.get(s, 'Bye')
+        l.append(s.upper())
     
-    l.append(team1.upper())
-    l.append(team2.upper())
-    l.append(team3.upper())
-    l.append(team4.upper())
-    l.append(team5.upper())
-    l.append(team6.upper())
-    l.append(team7.upper())
-    l.append(team8.upper())
-    l.append(team9.upper())
-    l.append(team10.upper())
-    l.append(team11.upper())
-    l.append(team12.upper())
-    l.append(team13.upper())
-    l.append(team14.upper())
-    l.append(team15.upper())
-    l.append(team16.upper())
-    l.append(team17.upper())
-    l.append(team18.upper())
-    l.append(team19.upper())
-    l.append(team20.upper())
-    l.append(team21.upper())
-    l.append(team22.upper())
-    l.append(team23.upper())
-    l.append(team24.upper())
-    l.append(team25.upper())
-    l.append(team26.upper())
-    l.append(team27.upper())
-    l.append(team28.upper())
-    l.append(team29.upper())
-    l.append(team30.upper())
-    l.append(team31.upper())
-    l.append(team32.upper())
-    
-    # changing the null strings to bye
-    for i in range(len(l)):
-        if l[i] == '':
-            l[i] = 'BYE'
 
     #for knockout rounds
 
-    #to find the nnearest number which is a power of 2
+    #to find the nearest number which is a power of 2
+    next = int(math.pow(2, math.ceil(math.log(int(numteam[0]))/math.log(2))))
 
-    if int(numteam[0]) % 2 != 0:
-        next = int(math.pow(2, math.ceil(math.log(int(numteam[0]))/math.log(2))))
+    # changing the null strings to bye
+
+    for i in range(1,(next+1)-len(l)):
+        l.append('BYE')
     
+
+    if int(numteam[0]) % 2 != 0:    
+        
         #dividing and arranging the teams
 
         end1ind = int(next/2)
@@ -367,7 +310,7 @@ def inputPage(request):
 
         
 
-    return render(request, 'index.html')
+    return render(request, 'roundrobin.html')
 
 def roundrobin(request):
 
